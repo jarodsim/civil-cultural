@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>World</title>
+    
+    
+    <style>
+      body {
+            height: 100%;
+            width: 100%;
+          
+          background-color: bisque;}
+      
+        
+        span{
+            
+            float: right;
+            background-color: white;
+        }
+      </style>
+        
+  </head>
+  <body >
+  
+  <span ID="Clock">00:00:00</span>
+ 
+  <button type="button" class="btn btn-light">Civil-cultural</button><br><br>
+  
+       
+
+
+<script LANGUAGE="JavaScript">
+
+  var Elem = document.getElementById("Clock");
+  function Horario(){ 
+    var Hoje = new Date(); 
+    var Horas = Hoje.getHours(); 
+    if(Horas < 10){ 
+      Horas = "0"+Horas; 
+    } 
+    var Minutos = Hoje.getMinutes(); 
+    if(Minutos < 10){ 
+      Minutos = "0"+Minutos; 
+    } 
+    var Segundos = Hoje.getSeconds(); 
+    if(Segundos < 10){ 
+      Segundos = "0"+Segundos; 
+    } 
+    Elem.innerHTML = Horas+":"+Minutos+":"+Segundos; 
+    } 
+    window.setInterval("Horario()",1000);
+
+</script>
+
+  <nav>
+   
+   <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="Wolrd-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">World</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="Topics-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Topics</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="News-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">News</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="World-tab"></div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="Topics-tab"></div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="News-tab"></div>
+</div>
+    
+</nav><br><br>
+ 
+   
+   
+   
+   <div class="jumbotron">
+  <h1 class="display-4">Notícias ao redor  do mundo!</h1>
+       <p class="lead">Coloque aqui a sua noticia acompanhada da img </p>
+  <hr class="my-4">
+  <p>Descrição</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+</div><br><br>
+   
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

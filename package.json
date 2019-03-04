@@ -1,0 +1,31 @@
+{
+  "name": "site-cultural",
+  "version": "1.0.0",
+  "description": "for share all information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/civilcultural/civilcultural.git"
+  },
+  "author": "astroo",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/civilcultural/civilcultural/issues"
+  },
+  "homepage": "https://gitlab.com/civilcultural/civilcultural#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "express": "^4.16.4",
+    "live-server": "^1.2.1",
+    "liveserver": "^0.1.20",
+    "nodemon": "^1.18.9",
+    "popper": "^1.0.1",
+    "watson-developer-cloud": "^3.16.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,91 @@
+#lang{
+	width: 300px;	
+	height: 15px;
+	float: right;
+}
+#country{
+	width: 300px;	
+	height: 15px;
+	float: right;
+}
+#email{
+	width: 300px;	
+	height: 15px;
+	float: right;
+}
+#chat{
+    width: 300px;	
+	height: 30px;
+	float: right;
+}
+#fav{
+    width: 300px;
+    height: 45px;
+    float: right;	
+}
+#c1{
+    width: 60px;
+    height: 21px;
+    float: right;
+}
+
+#c2{
+    width: 60px;
+    height: 21px;
+    float: right;	
+}
+#c3{
+    width: 50px;
+    height: 15px;
+    float: right;	
+}
+#c4{
+    width: 50px;
+    height: 15px;
+    float: right; 	
+
+}
+
+
+fieldset{
+	background-color:#F5D0A9;
+	width: 500px;
+	height: 390px;
+	border-style: solid;
+	border-width: 9px;
+	border-color: #F5D0A9;
+	right: 250px; position:absolute;
+	
+
+}
+body{
+    	text-align: left;
+    	font-family: sans-serif;
+    	width: 500px;
+    	height: 50px;
+    	color: black;
+    	width:12%;
+    	background-color: #2E9AFE;
+}
+
+
+div{
+	background-color: #FAFAFA;
+	border-color: white;
+	border-style: solid;
+	border-width: 10px;
+}
+
+
+img{
+	right: 800px; position:absolute;
+}
+
+
+
+h1{
+	color: black;
+	font-size: 60px;
+	padding:9px; margin:0;
+	
+}

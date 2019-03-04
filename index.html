@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Civil Cultural</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <script src="js/main.js"></script>
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                background-color: #b2bec3;
+            }
+
+            div {
+
+                text-align: center;
+            }
+
+            #space {
+                height: 50px;
+            }
+
+            #content .row {
+                min-height: 150px;
+                margin-top: 5%;
+            }
+
+            #sidebar {
+                padding-top: 40px
+            }
+
+            nav {
+                background-color: #636e72 !important;
+            }
+
+            #links_nav {
+                color: white !important;
+            }
+
+            footer {
+                background-color: #636e72;
+            }
+
+            footer a {
+                color: white;
+            }
+
+            #pagination li a {
+                background-color: #636e72 !important;
+                color: white;
+            }
+
+            /* Alterando para dispositivos de telas menores */
+
+        </style>
+    </head>
+
+    <body>
+
+
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-md-12">
+                    <!-- NavBar -->
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="#" id="links_nav"><img
+                                src="https://img.icons8.com/dusk/60/000000/europe.png" alt="logo">
+                            <p> CIVIL CULTURAL</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="#" id="links_nav">Home</a>
+
+                                <!-- Dropdown para selecionar lingua - dropdown to change language -->
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Change Language
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="https://img.icons8.com/color/48/000000/brazil.png">
+                                            Português</a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="https://img.icons8.com/color/48/000000/usa.png">
+                                            Inglês</a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="https://img.icons8.com/color/48/000000/spain-2.png">
+                                            Espanhol</a>
+                                    </div>
+                                </div>
+                                <!-- Fim do dropdown - end dropdown-->
+
+                                <a class="nav-item nav-link" id="links_nav" href="#" tabindex="-1" aria-disabled="true">
+                                    <span> United Kingdom
+                                        <img src="https://img.icons8.com/color/25/000000/great-britain.png" alt="flag">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="row">
+
+                        <!-- Inicio do posts - Home  -->
+                        <div class="container" id="content">
+                            <div class="row">
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://placeholder.com">
+                                        <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- Paginação - Paginations -->
+
+            <ul class="pagination justify-content-center" id="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small stylish-color-dark pt-4">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mx-auto">
+
+                        <!-- Content -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">News evolution about the project:</h5>
+                        <a href="https://civilcultural.wordpress.com/declaration/">
+                            <p>Press >Declaration about the project in personal level and actual situation<</p> </a> <a
+                                    href="https://civilcultural.wordpress.com/482-2/">
+                                    <p>
+                                        Carregar >Declaração sobre o projeto a nível pessoal e sua situação atual< </p>
+                                            </a> <p>
+                                            The project does not have a final name for now. It is up to the first
+                                            project administrators to decide.
+                                    </p>
+
+                                    <a href="http://www.un.org/apps/news/story.asp?NewsID=57629">
+                                        <i>The project does not have a final name for now. It is up to the first project
+                                            administrators to decide.</i>
+                                    </a>
+
+                                    <a href="https://freenode.net/">
+                                        https://freenode.net/ <p>in chat #social-real astroo- from 22-4 GMT time</p>
+                                    </a>
+
+                                    <p>I use discord system, but is private and is the actual base of the project.</p>
+
+                                    <i>
+                                        <b>
+                                            Thank you, to Robson Kramer and a old Portuguese “friend” for the special
+                                            support.
+                                        </b>
+                                    </i>
+                                    <br>
+                                    <b>
+                                        By the inventor and manager of the project
+                                    </b>
+
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>
+                                        <img src="https://img.icons8.com/metro/26/000000/secured-letter.png">
+                                        Email: Of the inventor and manager
+                                        astro-unity@hushmail.com
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <hr>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="https://civilcultural.wordpress.com/"> CivilCultural.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </body>
+
+</html>
