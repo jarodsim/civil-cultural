@@ -5,11 +5,12 @@
         <title>Civil Cultural</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Jquery -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>
@@ -18,7 +19,9 @@
             crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Css proprio -->
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <!-- JS proprio -->
         <script src="js/main.js"></script>
         <style>
             html,
@@ -65,6 +68,47 @@
             #pagination li a {
                 background-color: #636e72 !important;
                 color: white;
+                margin-top: 25px;
+            }
+
+            .news-description {
+                margin-top: 50px !important;
+                background-color: teal !important;
+            }
+
+            /*Btn back to top*/
+            #btnTop {
+                display: none;
+                /* Escondendo por padrão - Hidden by default */
+                position: fixed;
+                /* posição fixada - Fixed/sticky position */
+                bottom: 20px;
+                /* Colocando o butão na parte inferior da tela-  Place the button at the bottom of the page */
+                right: 30px;
+                /* Ao lado direito - Place the button 30px from the right */
+                z-index: 99;
+                /* Make sure it does not overlap */
+                border: none;
+                /* Remove borders */
+                outline: none;
+                /* Remove outline */
+                background-color: white;
+                /* Set a background color */
+                color: black;
+                /* Text color */
+                cursor: pointer;
+                /* Add a mouse pointer on hover */
+                padding: 15px;
+                /* Some padding */
+                border-radius: 10px;
+                /* Rounded corners */
+                font-size: 18px;
+                /* Increase font size */
+            }
+
+            #btnTop:hover {
+                background-color: #555;
+                /* Add a dark-grey background on hover */
             }
 
             /* Alterando para dispositivos de telas menores */
@@ -72,7 +116,7 @@
         </style>
     </head>
 
-    <body>
+    <body onload="callFunctions()">
 
 
         <div class="container">
@@ -119,6 +163,15 @@
                                         <img src="https://img.icons8.com/color/25/000000/great-britain.png" alt="flag">
                                     </span>
                                 </a>
+
+                                <a class="nav-item nav-link" id="links_nav" href="#" tabindex="-1" aria-disabled="true">
+                                    <span> Your Time
+                                        <p id="user-time">
+
+                                        </p>
+                                    </span>
+                                </a>
+
                             </div>
                         </div>
                     </nav>
@@ -128,24 +181,92 @@
                         <div class="container" id="content">
                             <div class="row">
                                 <div class="col-md">
-                                    <a href="https://placeholder.com">
+                                    <a
+                                        href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
+
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
+
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
+
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
+
                                 </div>
                             </div>
                             <div class="row">
@@ -153,21 +274,86 @@
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
+
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
+
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                             </div>
 
@@ -176,21 +362,85 @@
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                             </div>
 
@@ -199,21 +449,84 @@
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                                 <div class="col-md">
                                     <a href="https://placeholder.com">
                                         <img class="img-fluid img-thumbnail" src="http://via.placeholder.com/350x150">
                                     </a>
+
+                                    <!-- corpo da noticia - news bady description -->
+                                    <div class="card bg-light" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            The world wallks to the end
+                                        </div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">End Water Poverty is the international campaign that
+                                                aims to bring an end to the global water and sanitation crisis</p>
+
+                                            <a href="http://endwaterpoverty.blogspot.com/2010/10/brand-new-campaign-for-2011-world-walks.html"
+                                                class="card-link">See the news</a>
+                                        </div>
+                                    </div>
+                                    <!-- corpo da noticia - news bady description -->
                                 </div>
                             </div>
                         </div>
@@ -240,7 +553,7 @@
                     <a class="page-link" href="#">Next</a>
                 </li>
             </ul>
-
+            <!--    Paginação - Pagination  -->
         </div>
 
 
@@ -303,9 +616,9 @@
                         <ul class="list-unstyled">
                             <li>
                                 <p>
-                                        <img src="https://img.icons8.com/metro/26/000000/secured-letter.png">
-                                        Email: Of the inventor and manager
-                                        astro-unity@hushmail.com
+                                    <img src="https://img.icons8.com/metro/26/000000/secured-letter.png">
+                                    Email: Of the inventor and manager
+                                    astro-unity@hushmail.com
                                 </p>
                             </li>
                             <li>
@@ -338,6 +651,10 @@
 
         </footer>
         <!-- Footer -->
+
+
+        <!-- button to back to top -->
+        <button onclick="btnTop()" id="btnTop" title="Go to top">Top</button>
     </body>
 
 </html>
