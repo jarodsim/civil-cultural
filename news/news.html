@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="js/news.js"></script>
+
+
+    <title>News</title>
+  </head>
+  <style>
+    nav {
+      background-color: #636e72 !important;
+    }
+
+    #links_nav {
+      color: white !important;
+    }
+
+    .body-separated {
+      margin-top: 20px !important;
+      margin-bottom: 20px !important;
+    }
+
+    .btn-link-menu {
+      width: 100px !important;
+    }
+
+    footer {
+      background-color: #636e72;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    #topic-header {
+      text-align: center;
+    }
+
+    #body-news {
+      padding: 5px;
+      text-align: justify;
+    }
+
+    .img-media {
+      widows: 100%;
+    }
+
+    .text-media {
+      margin: 20px;
+    }
+
+  </style>
+
+  <body onload="callFunctions()">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="../index.html" id="links_nav"><img
+                src="https://img.icons8.com/dusk/60/000000/europe.png" alt="logo">
+              <p> CIVIL CULTURAL</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="../index.html" id="links_nav">Home</a>
+
+                <!-- Dropdown para selecionar lingua - dropdown to change language -->
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Change Language
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" id="pt-br">
+                      <img src="https://img.icons8.com/color/48/000000/brazil.png">
+                      Português</a>
+                    <a class="dropdown-item" href="#" id="ing-eua">
+                      <img src="https://img.icons8.com/color/48/000000/usa.png">
+                      Inglês</a>
+                    <a class="dropdown-item" href="#" id="esp">
+                      <img src="https://img.icons8.com/color/48/000000/spain-2.png">
+                      Espanhol</a>
+                  </div>
+                </div>
+                <!-- Fim do dropdown - end dropdown-->
+
+                <a class="nav-item nav-link" id="links_nav" href="#" tabindex="-1" aria-disabled="true">
+                  <span> United Kingdom
+                    <img src="https://img.icons8.com/color/25/000000/great-britain.png" alt="flag">
+                  </span>
+                </a>
+
+                <a class="nav-item nav-link" id="links_nav" href="#" tabindex="-1" aria-disabled="true">
+                  <span> Your Time
+                    <p id="user-time">
+
+                    </p>
+                  </span>
+                </a>
+
+              </div>
+            </div>
+          </nav>
+          <!-- end navbar -->
+        </div>
+
+
+
+        <!-- left Menu -->
+        <div class="col-md-3" id="menu-left">
+          <!-- body of left container -->
+          <div class="body-separated">
+
+            <!-- Menu -->
+            <div class="card">
+              <div class="card-header">
+                Menu
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Extra
+                  <p><a href="#" class="btn btn-danger" class="btn-link-menu">Visit</a></p>
+
+                </li>
+                <li class="list-group-item">
+                  Transitory
+                  <p> <a href="#" class="btn btn-danger" class="btn-link-menu">Visit</a></p>
+
+                </li>
+                <li class="list-group-item">
+                  Transitory
+                  <p><a href="#" class="btn btn-danger" class="btn-link-menu">Visit</a></p>
+
+                </li>
+              </ul>
+            </div>
+
+            <!-- end body of left container -->
+          </div>
+        </div>
+        <!-- Rigth News-->
+        <div class="col-md-9" id="news-right" class="body-separated">
+          <!-- body of right container -->
+          <div class="body-separated">
+            <div id="topic-header">
+              <h1 id="topic-title">The world is walking to de end</h1>
+              <hr>
+              <h6 id="topic-litle-description"><i>
+                  "I dont know what im whriting"
+                </i></h6>
+            </div>
+            <!-- body news -->
+            <div id="body-news">
+              <div class="card">
+                <div class="card-body">
+                  For the World Walks for Water and Sanitation 2012, FANSA Tamil Nadu Chapter in India coordinated 5
+                  exciting walks with many local partners. 2,022 women, children and grassroots farmers walked a
+                  collective distance of 22km altogether!
+
+                  The Walks began on the 17th March in Madurai, Tamilnadu in coordination with SWEED, with 400 women
+                  walking 2km; an event which they repeated to mark the end of the campaign on the 25th March! This
+                  first walk was follow
+
+
+                  <!-- media -->
+                  <div class="row" class="media">
+                    <!-- left -->
+                    <div class="col-md-5 col-5">
+                      <img
+                        src="http://3.bp.blogspot.com/-uKhPI8O7OYY/T3WzSKQfEwI/AAAAAAAAAaw/ah1MUl4gf60/s320/Tamilnadu%2Bwalk%2B2.jpg"
+                        alt="image-news" class="img-media img-fluid">
+                    </div>
+                    <!-- rigth -->
+                    <div class="col-md-7 col-md-7" class="text-media">
+                      On the 22nd March to mark World Water Day 2012, an amazing 610 local farmers walked 10KM in Trichy
+                      with the local farmers' association! This special day was also marked by FANSA Tamil Nadu Chapter
+                      with various activities including rallies on the important issues of water, hygiene, waste and
+                      water policy on the eve of World Water Day!
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- end body of right container -->
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mx-auto">
+
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">News evolution about the project:</h5>
+              <a href="https://civilcultural.wordpress.com/declaration/">
+                <p>Press >Declaration about the project in personal level and actual situation<</p> </a> <a
+                    href="https://civilcultural.wordpress.com/482-2/">
+                    <p>
+                      Carregar >Declaração sobre o projeto a nível pessoal e sua situação atual< </p> </a> <p>
+                        The project does not have a final name for now. It is up to the first
+                        project administrators to decide.
+                    </p>
+
+                    <a href="http://www.un.org/apps/news/story.asp?NewsID=57629">
+                      <i>The project does not have a final name for now. It is up to the first project
+                        administrators to decide.</i>
+                    </a>
+
+                    <a href="https://freenode.net/">
+                      https://freenode.net/ <p>in chat #social-real astroo- from 22-4 GMT time</p>
+                    </a>
+
+                    <p>I use discord system, but is private and is the actual base of the project.</p>
+
+                    <i>
+                      <b>
+                        Thank you, to Robson Kramer and a old Portuguese “friend” for the special
+                        support.
+                      </b>
+                    </i>
+                    <br>
+                    <b>
+                      By the inventor and manager of the project
+                    </b>
+
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mx-auto">
+
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <img src="https://img.icons8.com/metro/26/000000/secured-letter.png">
+                    Email: Of the inventor and manager
+                    astro-unity@hushmail.com
+                  </p>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://civilcultural.wordpress.com/"> CivilCultural.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+
+
+      <!-- end container -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

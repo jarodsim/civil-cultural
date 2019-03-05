@@ -1,6 +1,7 @@
 
 //function to call other function when the pag loads
 function callFunctions() {
+    //function to show user time
     time();
 }
 
@@ -32,4 +33,17 @@ function scrollFunction() {
 function btnTop() {
     document.body.scrollTop = 0; //  Para o safari - For Safari
     document.documentElement.scrollTop = 0; // Para o chrome, IE e Opera - For Chrome, Firefox, IE and Opera
+}
+
+/**
+ * Verificar idioma do usuario - verify user language
+ */
+function userLanguage() {
+    if (navigator.browserLanguage) {
+        var idioma = navigator.browserLanguage;
+    } else if (navigator.language) {
+        var idioma = navigator.language;
+    }
+
+    alert("Your language is:" + idioma);
 }
